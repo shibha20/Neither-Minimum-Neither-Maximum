@@ -1,0 +1,17 @@
+class Solution(object):
+    def findNonMinOrMax(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        maximum = max(nums)
+        minimum = min(nums)
+
+        result = -1
+
+        for i in nums:
+            if (i != maximum and i != minimum):
+                result = i
+ 
+        print (result)
+        return result
